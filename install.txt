@@ -1,3 +1,0 @@
-conda install -c conda-forge face-recognition  
-conda install -c conda-forge imutils   
-conda install -c conda-forge opencv  
