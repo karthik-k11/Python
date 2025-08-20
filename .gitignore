@@ -1,0 +1,15 @@
+# Ignore virtual environments
+env/
+venv/
+*.pyc
+__pycache__/
+
+# Ignore big binary/model files
+*.pyd
+*.dll
+*.so
+*.exe
+
+# Ignore IDE/editor stuff
+.vscode/
+.idea/
