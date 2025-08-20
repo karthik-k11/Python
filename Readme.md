@@ -29,10 +29,9 @@ EAR = \frac{ \lVert p_2 - p_6 \rVert + \lVert p_3 - p_5 \rVert }{ 2 \times \lVer
 $$
 
 **Where:**
-- \(p_1 ... p_6\) are 6 eye landmark points  
-- \(\lVert p_i - p_j \rVert\) is Euclidean distance  
+- \(p_1 ... p_6\) → 6 eye landmark points  
+- \(\lVert p_i - p_j \rVert\) → Euclidean distance between two points  
 - If **EAR < 0.25** for **N consecutive frames** → drowsiness alert is triggered
-
 
 ---
 
