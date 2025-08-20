@@ -16,6 +16,25 @@ The **Drowsiness Detection System** is an AI-powered computer vision project tha
 - Imutils  
 - Numpy  
 
+## 👁️ How EAR Formula Detects Drowsiness
+
+To detect whether eyes are open or closed, we measure the **Eye Aspect Ratio (EAR)** calculated from 6 facial landmark points around each eye.
+
+> When eyes close → vertical distances shrink → EAR value drops below threshold.
+
+### 📐 **EAR Formula**
+
+\[
+EAR = \frac{ \|p_2 - p_6\| + \|p_3 - p_5\| }{ 2 \times \|p_1 - p_4\| }
+\]
+
+Where:  
+- \(p_1 ... p_6\) are 6 eye landmark points  
+- \(\|p_i - p_j\|\) is **Euclidean distance**  
+- **If EAR < 0.25 for N frames → drowsiness alert is triggered**
+
+---
+
 ## 📌 Project Highlights
 - Detects driver drowsiness by monitoring eye blink patterns.  
 - Provides real-time feedback with alarms.  
