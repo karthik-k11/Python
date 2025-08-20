@@ -22,16 +22,17 @@ To detect whether eyes are open or closed, we measure the **Eye Aspect Ratio (EA
 
 > When eyes close → vertical distances shrink → EAR value drops below threshold.
 
-### 📐 **EAR Formula**
+## 📐 EAR Formula
 
-\[
-EAR = \frac{ \|p_2 - p_6\| + \|p_3 - p_5\| }{ 2 \times \|p_1 - p_4\| }
-\]
+$$
+EAR = \frac{ \lVert p_2 - p_6 \rVert + \lVert p_3 - p_5 \rVert }{ 2 \times \lVert p_1 - p_4 \rVert }
+$$
 
-Where:  
+**Where:**
 - \(p_1 ... p_6\) are 6 eye landmark points  
-- \(\|p_i - p_j\|\) is **Euclidean distance**  
-- **If EAR < 0.25 for N frames → drowsiness alert is triggered**
+- \(\lVert p_i - p_j \rVert\) is Euclidean distance  
+- If **EAR < 0.25** for **N consecutive frames** → drowsiness alert is triggered
+
 
 ---
 
